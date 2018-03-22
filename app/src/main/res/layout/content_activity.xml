@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.helloworld.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/content_background"
+    android:paddingBottom="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_dim"
+                android:layout_height="@dimen/icon_dim"
+                android:src="@drawable/ic_school_black_24dp"/>
+
+            <TextView
+
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/schoolName"
+                android:textColor="@color/textContentColor"
+                android:textSize="@dimen/textContentSize"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_dim"
+                android:layout_height="@dimen/icon_dim"
+                android:src="@drawable/ic_home_black_24dp"/>
+
+            <TextView
+
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/textContentColor"
+                android:textSize="@dimen/textContentSize"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_dim"
+                android:layout_height="@dimen/icon_dim"
+                android:src="@drawable/ic_smartphone_black_24dp"/>
+
+            <TextView
+
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phoneNumber"
+                android:textColor="@color/textContentColor"
+                android:textSize="@dimen/textContentSize"
+                android:layout_gravity="center_vertical"
+                android:onClick="callNumber"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_dim"
+                android:layout_height="@dimen/icon_dim"
+                android:src="@drawable/ic_email_black_24dp"/>
+
+            <TextView
+
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@color/textContentColor"
+                android:textSize="@dimen/textContentSize"
+                android:layout_gravity="center_vertical"
+                android:onClick="sendToEmail"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
